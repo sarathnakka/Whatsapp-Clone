@@ -1,0 +1,378 @@
+:root{
+    --background: #090E11;
+    --primary:#2A2F32;
+    --divider: #3C4247;
+    --contactBackground: #131C21;
+    --iconColor: #A9ABAD;
+    --primaryTextColor: #D8D9DA;
+    --secondaryTextColor: #919497;
+    --primaryChatsColor: #056162;
+    --secondaryChatColor: #262D31;
+    --searchBarColor: #323739;
+    --searchContentColor:#64696B;
+    --textBox: #1E2428;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--searchContentColor);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--searchContentColor);
+  }
+body{
+    font-family: Helvetica, Sans-Serif;
+    background-color:var(--background);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-x: hidden;
+}
+.dividerColumn{
+    background-color: var(--divider) !important;
+    width: 1px !important;
+}
+
+.dividerRow{
+    background-color: var(--divider) !important;
+    height: 1px !important;
+    width: 100%;
+}
+.container{
+    min-height: 847px;
+    width: 1390px;
+    margin-top: 5px;
+    background-color: var(--primary);
+    display: flex;
+}
+
+/*Contact list css*/
+.contactListContainer{
+    width: 30.1%;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.topBar{
+    height: 39px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.topIcons{
+    display: flex;
+}
+.margin-icon{
+    padding: 8px;
+    margin-left: 10px;
+}
+/*icons*/
+.Icons{
+  color: var(--iconColor);
+}
+
+
+a{
+    text-decoration: none !important;
+}
+.searchBar{
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--contactBackground);
+}
+.search{
+    border-radius: 20px;
+    padding: 8px;
+    padding-right: 12px;
+    padding-left: 16px;
+    display: flex;
+    background-color: var(--searchBarColor);
+}
+.search input{
+    border: none;
+    background-color:transparent;
+    margin-left: 22px;
+    font-size: 16px !important;
+    outline: none;
+    color: var(--primaryTextColor);
+}
+.Icons-search{
+    color: var(--searchContentColor);
+}
+.addNew{
+    padding: 1px;
+    background-color: var(--contactBackground);
+}
+.addNew p{
+    text-align: center;
+    color: var(--primaryTextColor);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--searchContentColor);
+}
+.addNew :hover{
+    background-color: var(--primary);
+}
+
+.searchBox{
+    display: flex;
+    justify-content: space-between;
+}
+.searchPhoneNumber{
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--primary);
+}
+.searchPhoneNumber input{
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+.buttonSearch{
+    height: min-content;
+    margin: 10px 10px 0px 0px;
+    border-radius: 10px;
+    background-color: var(--primaryChatsColor);
+    color: white;
+    padding: 14px;
+}
+.buttonSearch :hover{
+    background-color: var(--searchContentColor);
+}
+/*chatsList*/
+.chatsList{
+    height: 800px;
+    width: 100%;
+    padding-bottom: 14px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: var(--contactBackground);
+}
+
+/*contactCards*/
+.contactCardsContainer{
+    width: 100%;
+}
+.contactCardsContainer :hover{
+    background-color: var(--divider);
+}
+
+.contactCard{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 16px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.cardTexts{
+    width: 100%;
+    background-color: transparent;
+    margin-left: 12px;
+}
+.cardHeading{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.cardTime{
+    min-width: 50px;
+    font-size: 12px !important;
+    padding-left: 5px;
+    padding-right: 10px;
+    text-align: end;
+    color: var(--secondaryTextColor);
+}
+.contactName{
+    font-size: 17px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 5px;
+    text-overflow: ellipsis !important;
+    color: var(--primaryTextColor);
+}
+.contactText{
+    min-height: 10px;
+    font-size: 14px;
+    padding-top: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    color: var(--secondaryTextColor);
+}
+
+/*Chats Container*/
+.chatsContainer{
+    width: 70%;
+    height: 100%;
+    background-color: var(--textBox);
+}
+.titleChat{
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 18px;
+    font-weight: 600;
+    color: var(--primaryTextColor);
+}
+.chatsSection{
+    width: 100%;
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: url('../../images/whatsappBackground.jpg');
+}
+
+.bottomTextBox{
+    background-color:var(--textBox);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content:space-between;
+}
+.margin-icon-chat{
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.boxIcon{
+    display: flex;
+    margin-right: 10px;
+    margin-right: 18px;
+}
+.TypeBox{
+    width: 100%;
+   border-radius: 30px;
+   padding-right: 10px;
+   padding-left: 18px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   background-color: var(--searchBarColor);
+}
+.TypeBox input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: var(--primaryTextColor);
+    background-color:transparent;
+ }
+
+
+ @media screen and (max-width: 1024px) {
+     body{
+         overflow-x: hidden;
+     }
+    .container{
+        width: 890px !important;
+    }
+ }
+
+ @media screen and (max-width: 900px) {
+    .container{
+        min-height: 1210px;
+        width: 790px !important;
+    }    
+    .chatsContainer{
+        width: 60%;
+        background-color: var(--textBox);
+    }
+    .contactListContainer{
+        width: 40.1%;
+        background-color: var(--primary);
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .container{
+        min-height: 790px;
+        width: 680px !important;
+    }    
+    .chatsContainer{
+        width: 60%;
+        background-color: var(--textBox);
+    }
+    .contactListContainer{
+        width: 40.1%;
+        background-color: var(--primary);
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .container{
+        min-height: 860px;
+        width: 680px !important;
+    }    
+    .chatsContainer{
+        width: 65%;
+        background-color: var(--textBox);
+    }
+    .contactListContainer{
+        width: 40.1%;
+        background-color: var(--primary);
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+     body{
+         overflow-x: scroll;
+     }
+    .container{
+        min-height: 560px;
+        height: 490px;
+        width: 360px !important;
+    }    
+    .chatsContainer{
+        width: 100%;
+        background-color: var(--textBox);
+    }
+    .contactListContainer{
+        width: 90%;
+        background-color: var(--primary);
+    }
+    .titleChat{
+        width: 180px;
+        font-size: 12px;
+        padding: 14px;
+        padding-left: 10px;
+        font-weight: 600;;
+    }
+    
+.margin-icon-chat{
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.boxIcon{
+    display: flex;
+    margin-right: 5px;
+}
+ }
